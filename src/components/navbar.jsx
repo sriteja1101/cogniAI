@@ -1,7 +1,7 @@
 import BlackBtn from "./blackBtn"
 function Navbar(){
     return(
-        <div className="flex justify-evenly max-md:justify-between items-center h-20 mb-10">
+        <div className="flex justify-evenly max-md:justify-between items-center h-20 mb-10 max-md:px-2">
             <div>
             <h2 className="text-3xl font-normal">Cogni<span className="font-medium">AI</span></h2>
             </div>
