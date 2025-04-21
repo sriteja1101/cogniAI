@@ -19,7 +19,7 @@ function Work(){
 
             <div className="w-full flex gap-4 flex-wrap max-md:flex-col">
                 <div className="flex gap-4 items-center h-[30vh] max-md:h-fit max-md:flex-col">
-                <div className="w-[50%] max-md:w-full max-lg:h-[80%]">
+                <div className="w-[50%] max-md:w-full h-full max-lg:h-[80%]">
                 <InfoCard src={fileUpload} title="Upload & Connect Seamlessly" text = "Easily import data from spreadsheets, databases, and APIs effortlessly for seamless integration and efficient workflows."/>
                 </div>
                 <div className="w-[50%] max-md:w-full h-full max-lg:h-[80%]">
