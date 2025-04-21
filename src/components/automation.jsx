@@ -5,11 +5,12 @@ import profile2 from "../assets/profile2.png";
 import profile3 from "../assets/profile3.png";
 import profile4 from "../assets/profile4.png";
 function Automation(){
+    const width = "w-[45%]"
     return(
         <div className="flex items-center justify-center my-20">
             <div className="w-[80%] flex flex-col items-center justify-center gap-5">
                 <div className="flex items-center justify-between w-full">
-                    <GradientText title={"USE CASE"} tag={"Optimize Workflows with Smart Automation Tools"} text={"Organize tasks, track progress, and achieve more effortlessly."}/>
+                    <GradientText title={"USE CASE"} tag={"Optimize Workflows with Smart Automation Tools"} text={"Organize tasks, track progress, and achieve more effortlessly."} width={width}/>
                     <BlackBtn text={"See AI in Action"}/>
                 </div>
 

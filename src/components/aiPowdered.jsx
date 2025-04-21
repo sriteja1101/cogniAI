@@ -10,18 +10,28 @@ function AIPowered(){
         <div className="flex items-center justify-center mt-15">
             <div className="w-[70%] flex flex-col items-center justify-center gap-18 mb-10">
                 <div className="w-[85%]">
-                    <h2 className="text-3xl font-medium text-center leading-[1.3]">CogniAl is an advanced Al-powered data <br /> analysis platform designed to transform <br /> raw data into actionable insights.</h2>
+                    <h2 className="text-3xl font-normal text-center leading-[1.3] bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a] to-[#f46800] bg-clip-text text-transparent">CogniAl is an advanced Al-powered data <br /> analysis platform designed to transform <br /> raw data into actionable insights.</h2>
                 </div>
                 <div className="flex w-full justify-center items-center">
-                    <img src={userImages} alt="userImages" className="bg-[#f46a0025] p-3 rounded-full"/>
+                    <div className="bg-[#f46a0025] p-3 rounded-full">
+                    <img src={userImages} alt="userImages" className="w-6"/>
+                    </div>
                     <div className="w-[6%] h-[4px] bg-[#f46a0025]"></div>
-                    <img src={starredFile} alt="starredFile" className="bg-[#f46a0025] p-3 rounded-full"/>
+                    <div  className="bg-[#f46a0025] p-3 rounded-full">
+                    <img src={starredFile} alt="starredFile" className="w-6"/>
+                    </div>
                     <div className="w-[9%] h-[4px] bg-[linear-gradient(to_right,_#f46a0025,_#F46800)]"></div>
-                    <img src={star} alt="star" className="bg-[#F46800] p-5 rounded-full ring-[12px] ring-[rgba(244,106,0,0.11)] outline-[25px] outline-[rgba(244,106,0,0.06)]"/>
+                    <div className="p-5 rounded-full bg-[#F46800] ring-[12px] ring-[rgba(244,106,0,0.11)] outline-[25px] outline-[rgba(244,106,0,0.06)]">
+                    <img src={star} alt="star" className="w-8"/>
+                    </div>
                     <div className="w-[9%] h-[4px] bg-[linear-gradient(to_left,_#f46a0025,_#F46800)]"></div>
-                    <img src={hub} alt="hub" className="bg-[#f46a0025] p-3 rounded-full"/>
+                    <div className="bg-[#f46a0025] p-3 rounded-full">
+                    <img src={hub} alt="hub" className="w-6"/>
+                    </div>
                     <div className="w-[6%] h-[4px] bg-[#f46a0025]"></div>
-                    <img src={paper} alt="paper" className="bg-[#f46a0025] p-3 rounded-full"/>
+                    <div className="bg-[#f46a0025] p-3 rounded-full">
+                    <img src={paper} alt="paper" className="w-6"/>
+                    </div>
                 </div>
                 <div className="w-[47%] text-center">
                     <p className="text-md text-gray-400">Using cutting-edge machine learning and deep analytics, CogniAl helps businesses, researchers, and decision-makers unlock hidden patterns, predict trends, and optimize performance.</p>

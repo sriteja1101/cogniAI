@@ -7,11 +7,12 @@ import loop from "../assets/loop.png"
 import more from "../assets/more.png"
 import internet from "../assets/internet.png"
 function Features(){
+    const width = "w-[55%]"
     return(
         <div className="flex justify-center w-full my-10">
             <div className="w-[80%] flex flex-col items-center gap-7">
                 <div className="w-full items-center flex justify-center text-center">
-                    <GradientText title={"KEY FEATURES"} tag={"Unlock Success with Actionable Performance Metrics"} text={"Track, analyze, and optimize data to improve performance and drive success."}/>
+                    <GradientText title={"KEY FEATURES"} tag={"Unlock Success with Actionable Performance Metrics"} text={"Track, analyze, and optimize data to improve performance and drive success."} width={width}/>
                 </div>
 
                 <div className="flex items-center justify-center gap-4 w-full">

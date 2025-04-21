@@ -3,12 +3,10 @@ import Box2 from "./box2"
 import Box3 from "./box3"
 import Box4 from "./box4"
 
-
-
 function Hero(){
     return (
         <div className="flex justify-center items-center">
-            <div className="w-[80%] h-[78vh] bg-[radial-gradient(ellipse_at_bottom,_#ffc590_0%,_#ffc590_15%,_#f0d4d9_40%,_#e0ecf9_60%,_#deeaf6_100%)] rounded-2xl flex justify-center items-center">
+            <div className="w-[80%] h-[78vh] bg-[radial-gradient(ellipse_at_bottom,_#ffc590_0%,_#ffc590_15%,_#f0d4d9_40%,_#e0ecf9_60%,_#deeaf6_100%)] rounded-4xl flex justify-center items-center">
                 <div className="w-[80%] h-[80%] gap-4 flex justify-center items-start">
                  <div className="w-full flex flex-col ite gap-4">
                     <div className="self-end w-[90%] h-full">
