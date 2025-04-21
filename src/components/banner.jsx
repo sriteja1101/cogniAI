@@ -133,11 +133,11 @@ function Banner() {
               </div>
             </div>
 
-            <div className="flex items-center self-end bg-[#f6f2f2bc] rounded-full w-fit p-2">
-              <div className="w-15 h-15 bg-[rgba(244,104,0)] rounded-full "></div>
-              <div className="w-15 h-15 bg-[#0DB044] rounded-full ml-[-27px]"></div>
-              <div className="w-15 h-15 bg-[#0E3DC9] rounded-full ml-[-27px]"></div>
-              <div className="w-15 h-15 bg-[whitesmoke] rounded-full ml-[-27px]"></div>
+            <div className="flex items-center self-end max-md:self-center bg-[#f6f2f2bc] rounded-full w-fit p-2">
+              <div className="w-15 h-15 max-md:w-12 max-md:h-12 bg-[rgba(244,104,0)] rounded-full "></div>
+              <div className="w-15 h-15 max-md:w-12 max-md:h-12 bg-[#0DB044] rounded-full ml-[-27px]"></div>
+              <div className="w-15 h-15 max-md:w-12 max-md:h-12 bg-[#0E3DC9] rounded-full ml-[-27px]"></div>
+              <div className="w-15 h-15 max-md:w-12 max-md:h-12 bg-[whitesmoke] rounded-full ml-[-27px]"></div>
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@ function AIPowered(){
                     <img src={starredFile} alt="starredFile" className="w-6"/>
                     </div>
                     <div className="w-[9%] h-[4px] bg-[linear-gradient(to_right,_#f46a0025,_#F46800)]"></div>
-                    <div className="p-5 rounded-full bg-[#F46800] ring-[12px] ring-[rgba(244,106,0,0.11)] outline-[25px] outline-[rgba(244,106,0,0.06)]">
+                    <div className="p-5 rounded-full bg-[#F46800] ring-[12px] ring-[rgba(244,106,0,0.11)] max-md:ring-8 max-md:outline-[15px] outline-[25px] outline-[rgba(244,106,0,0.06)]">
                     <img src={star} alt="star" className="w-8"/>
                     </div>
                     <div className="w-[9%] h-[4px] bg-[linear-gradient(to_left,_#f46a0025,_#F46800)]"></div>
