@@ -10,7 +10,7 @@ function Banner() {
     <div className="flex justify-center items-center pb-10">
       <div className="w-[80%] max-lg:w-[95%] h-[67vh] max-xl:h-[76vh] max-lg:h-[80vh] max-md:h-full bg-[radial-gradient(ellipse_at_bottom,_#ffc590_0%,_#ffc590_15%,_#f0d4d9_40%,_#e0ecf9_60%,_#deeaf6_100%)] rounded-4xl flex px-6">
         <div className="w-full h-full flex max-lg:flex-col max-lg:justify-center justify-between items-center">
-          <div className="w-[35%] max-lg:w-full h-full flex flex-col justify-between py-6">
+          <div className="w-[35%] max-lg:w-full h-full flex flex-col justify-between max-lg:justify-around py-6">
             <div className="w-full">
               <GradientText
                 title={"REAL STORIES"}
