@@ -25,15 +25,15 @@ function Work() {
         </div>
 
         <div className="w-full flex gap-4 flex-wrap max-md:flex-col">
-          <div className="flex gap-4 items-center w-full h-[30vh] max-md:h-fit max-md:flex-col">
-            <div className="w-[50%] max-md:w-full h-full max-lg:h-[80%]">
+          <div className="flex gap-4 items-center w-full h-[30vh] max-lg:h-[20vh] max-xl:h-[25vh] max-md:h-fit max-md:flex-col">
+            <div className="w-[50%] max-md:w-full h-full">
               <InfoCard
                 src={fileUpload}
                 title="Upload & Connect Seamlessly"
                 text="Easily import data from spreadsheets, databases, and APIs effortlessly for seamless integration and efficient workflows."
               />
             </div>
-            <div className="w-[50%] max-md:w-full h-full max-lg:h-[80%]">
+            <div className="w-[50%] max-md:w-full h-full">
               <InfoCard
                 src={wristWatch}
                 title="Al-Driven Processing in Real-Time"
@@ -42,15 +42,15 @@ function Work() {
             </div>
           </div>
 
-          <div className="flex gap-4 items-center w-full h-[30vh] max-md:h-fit max-md:flex-col">
-            <div className="w-[50%] max-md:w-full h-full max-lg:h-[80%]">
+          <div className="flex gap-4 items-center w-full h-[30vh] max-lg:h-[20vh] max-xl:h-[25vh] max-md:h-fit max-md:flex-col">
+            <div className="w-[50%] max-md:w-full h-full">
               <InfoCard
                 src={lineChart}
                 title="Gain Actionable Insights Instantly"
                 text="Generate reports, visualize trends, and detect patterns with Al-powered analytics."
               />
             </div>
-            <div className="w-[50%] max-md:w-full h-full max-lg:h-[80%]">
+            <div className="w-[50%] max-md:w-full h-full">
               <InfoCard
                 src={trophy}
                 title="Make Smarter, Data-Driven Decisions"
