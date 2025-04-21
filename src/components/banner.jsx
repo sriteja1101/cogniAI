@@ -7,7 +7,7 @@ import "react-circular-progressbar/dist/styles.css";
 function Banner() {
   const width = "w-full";
   return (
-    <div className="flex justify-center items-center my-20">
+    <div className="flex justify-center items-center mt-20 mb-5">
       <div className="w-[80%] max-lg:w-[95%] h-[67vh] max-xl:h-[76vh] max-lg:h-full bg-[radial-gradient(ellipse_at_bottom,_#ffc590_0%,_#ffc590_15%,_#f0d4d9_40%,_#e0ecf9_60%,_#deeaf6_100%)] rounded-4xl flex px-6">
         <div className="w-full h-full flex max-lg:flex-col max-lg:justify-center justify-between items-center">
           <div className="w-[35%] max-lg:w-full h-full flex flex-col justify-between max-lg:justify-between py-6">
@@ -58,8 +58,8 @@ function Banner() {
             />
           </div>
 
-          <div className="w-[30%]  max-xl:w-[30%] items-end max-lg:items-center max-lg:w-full max-md:gap-4 h-full flex flex-col max-lg:gap-2 justify-between py-6">
-            <div className="flex flex-col gap-2 p-3 w-[75%] bg-[#f6f2f2bc] rounded-3xl">
+          <div className="w-[30%] max-xl:w-[30%] items-end max-lg:items-center max-lg:w-full max-md:gap-4 h-full flex flex-col max-lg:gap-2 justify-between py-6">
+            <div className="flex flex-col gap-2 p-3 w-[75%] max-md:w-full bg-[#f6f2f2bc] rounded-3xl">
               <div className="flex justify-between items-center w-full">
                 <h3>Resource Allocation</h3>
                 <div className="p-2 bg-white rounded-full w-7">
