@@ -25,7 +25,7 @@ function SocialCards({ company, tag, src, growth }) {
 
 function Box1() {
   return (
-    <div className="w-full h-full bg-[#f5f7fb] flex flex-col justify-between items-center gap-3 rounded-3xl p-4">
+    <div className="w-full h-[190px] bg-[#f5f7fba7] flex flex-col justify-between items-center gap-3 rounded-3xl p-4">
       <div className="flex justify-between items-center w-full">
         <p className="text-md font-medium">Integration Tools</p>
         <img
