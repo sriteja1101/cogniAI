@@ -4,7 +4,7 @@ import upRight from "../assets/upRight.png"
 
 function Box2(){
     return(
-        <div className="w-full h-[230px] max-md:h-full bg-[#f5f7fba7] flex flex-col justify-between items-center p-3 rounded-3xl">
+        <div className="w-full h-full bg-[#f5f7fba7] flex flex-col justify-between items-center p-3 rounded-3xl">
         <div className="flex justify-between items-center w-full">
                 <p className="text-md font-medium">Profile Completion</p>
                 <img src={upRight} alt="up-right-icon" className="p-2 bg-white rounded-full w-7"/>

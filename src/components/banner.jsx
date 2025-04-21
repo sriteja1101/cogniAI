@@ -8,9 +8,9 @@ function Banner() {
   const width = "w-full"
   return (
     <div className="flex justify-center items-center pb-10">
-      <div className="w-[80%] max-md:w-[95%] h-[67vh] max-md:h-full bg-[radial-gradient(ellipse_at_bottom,_#ffc590_0%,_#ffc590_15%,_#f0d4d9_40%,_#e0ecf9_60%,_#deeaf6_100%)] rounded-4xl flex px-6">
-        <div className="w-full h-full flex max-md:flex-col max-md:justify-center justify-between items-center">
-          <div className="w-[35%] max-md:w-full h-full flex flex-col justify-between py-6">
+      <div className="w-[80%] max-lg:w-[95%] h-[67vh] max-xl:h-[76vh] max-lg:h-[80vh] max-md:h-full bg-[radial-gradient(ellipse_at_bottom,_#ffc590_0%,_#ffc590_15%,_#f0d4d9_40%,_#e0ecf9_60%,_#deeaf6_100%)] rounded-4xl flex px-6">
+        <div className="w-full h-full flex max-lg:flex-col max-lg:justify-center justify-between items-center">
+          <div className="w-[35%] max-lg:w-full h-full flex flex-col justify-between py-6">
             <div className="w-full">
               <GradientText
                 title={"REAL STORIES"}
@@ -21,27 +21,27 @@ function Banner() {
                 width={width}
               />
             </div>
-            <div className="flex flex-col gap-2 py-5 w-full">
-              <div className="flex gap-2 items-center w-fit border-2 p-2 rounded-full border-[#f5f5f55d] bg-[#ffffff63]">
+            <div className="flex flex-col max-lg:items-center gap-2 py-5 w-full">
+              <div className="flex gap-2 items-center w-fit max-lg:w-full border-2 p-2 rounded-full border-[#f5f5f55d] bg-[#ffffff63]">
                 <img src={accept} alt="accept" className="w-4" />
                 <span className="text-sm">
                   Advance career growth opportunities
                 </span>
               </div>
 
-              <div className="flex gap-2 items-center w-fit border-2 p-2 rounded-full border-[#f5f5f55d] bg-[#ffffff39]">
+              <div className="flex gap-2 items-center w-fit max-lg:w-full border-2 p-2 rounded-full border-[#f5f5f55d] bg-[#ffffff39]">
                 <img src={accept} alt="accept" className="w-4" />
                 <span className="text-sm">Communicate ideas persuasively</span>
               </div>
 
-              <div className="flex gap-2 items-center w-fit border-2 p-2 rounded-full border-[#f5f5f55d] bg-[#ffffff1a]">
+              <div className="flex gap-2 items-center w-fit max-lg:w-full border-2 p-2 rounded-full border-[#f5f5f55d] bg-[#ffffff1a]">
                 <img src={accept} alt="accept" className="w-4" />
                 <span className="text-sm">
                   Develop strong networking abilities
                 </span>
               </div>
 
-              <div className="flex gap-2 items-center w-fit border-2 p-2 rounded-full border-[#f5f5f55d] bg-[#ffffff39]">
+              <div className="flex gap-2 items-center w-fit max-lg:w-full border-2 p-2 rounded-full border-[#f5f5f55d] bg-[#ffffff39]">
                 <img src={accept} alt="accept" className="w-4" />
                 <span className="text-sm">
                   Boost professional confidence daily
@@ -50,11 +50,11 @@ function Banner() {
             </div>
           </div>
 
-          <div className="w-[35%] h-full flex justify-center max-md:hidden">
+          <div className="w-[35%] h-full flex justify-center max-lg:hidden">
             <img src={women} alt="women" className="w-full h-full mt-[12px] max-md:hidden" />
           </div>
 
-          <div className="w-[20%] max-md:w-full max-md:gap-4 h-full flex flex-col justify-between py-6">
+          <div className="w-[20%] max-xl:w-[30%] max-lg:w-full max-md:gap-4 h-full flex flex-col max-lg:gap-2 justify-between py-6">
             <div className="flex flex-col gap-2 p-3 w-full bg-[#f6f2f2bc] rounded-3xl">
               <div className="flex justify-between items-center w-full">
                 <h3>Resource Allocation</h3>
@@ -64,7 +64,7 @@ function Banner() {
               </div>
 
               <div className="flex justify-between items-center gap-2 w-full mt-2">
-                <div className="w-[30%] h-full flex flex-col gap-2 ">
+                <div className="w-[30%] max-lg:w-[20%] h-full flex flex-col gap-2 ">
                   <CircularProgressbar
                     value={58}
                     text={"58%"}
@@ -77,7 +77,7 @@ function Banner() {
                     })}
                   />
                 </div>
-                <div className="w-[30%] h-full flex flex-col gap-2">
+                <div className="w-[30%] max-lg:w-[20%]  h-full flex flex-col gap-2">
                   <CircularProgressbar
                     value={25}
                     text={"25%"}
@@ -91,7 +91,7 @@ function Banner() {
                   />
                 </div>
 
-                <div className="w-[30%] h-full flex flex-col gap-2">
+                <div className="w-[30%] max-lg:w-[20%]  h-full flex flex-col gap-2">
                   <CircularProgressbar
                     value={12}
                     text={"12%"}

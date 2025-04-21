@@ -15,7 +15,7 @@ function Remainder({src, title, text}){
 
 function Box4(){
     return(
-        <div className="w-full h-[230px] max-md:h-full bg-[#f5f7fba7] flex flex-col justify-between gap-2 items-center p-3 rounded-3xl">
+        <div className="w-full h-full bg-[#f5f7fba7] flex flex-col justify-between gap-2 items-center p-3 rounded-3xl">
         <div className="flex justify-between items-center w-full">
                 <p className="text-md font-medium">Remainders</p>
                 <img src={upRight} alt="up-right-icon" className="p-2 bg-white rounded-full w-7"/>

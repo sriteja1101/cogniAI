@@ -10,19 +10,19 @@ function Features(){
     const width = "w-[55%] max-md:w-[90%]"
     return(
         <div className="flex justify-center w-full my-10">
-            <div className="w-[80%] max-md:w-[95%] flex flex-col items-center gap-7">
+            <div className="w-[80%] max-lg:w-[95%] flex flex-col items-center gap-7">
                 <div className="w-full items-center flex justify-center text-center">
                     <GradientText title={"KEY FEATURES"} tag={"Unlock Success with Actionable Performance Metrics"} text={"Track, analyze, and optimize data to improve performance and drive success."} width={width}/>
                 </div>
 
                 <div className="flex items-center max-md:flex-col justify-center gap-4 w-full">
-                    <div className="flex flex-col gap-4 w-[75%] max-md:w-full h-full">
+                    <div className="flex flex-col gap-4 w-[75%] max-lg:w-full h-full">
                         <InfoCard src={analytics} title={"Predictive Analytics"} text={"Forecast trends with Al-driven insights."}/>
                         <InfoCard src={folder} title={"Real-Time Reporting"} text={"Interactive dashboards for better decision-making."}/>
                     </div>
 
-                    <div className="w-full bg-[#FFF6EA] h-full rounded-2xl justify-center items-center flex flex-col gap-2 py-3">
-                        <div className="w-[90%] max-md:w-full h-[73%] max-md:h-full bg-white flex flex-col gap-2 p-5 rounded-2xl mt-7 border-[20px] border-[#f2e6d766]">
+                    <div className="w-full max-lg:w-[50%] max-md:w-full bg-[#FFF6EA] h-full rounded-2xl justify-center items-center flex flex-col gap-2 py-3">
+                        <div className="w-[90%]  max-md:w-full h-[73%] max-md:h-full bg-white flex flex-col gap-2 p-5 rounded-2xl mt-7 border-[20px] border-[#f2e6d766]">
                             <img src={more} alt="more" className="w-9"/>
                             <div className="h-2.5 w-full bg-[linear-gradient(to_right,_#f46a0025,_#F46800)] rounded-2xl"></div>
 
@@ -89,7 +89,7 @@ function Features(){
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-4 w-[75%] max-md:w-full h-full">
+                    <div className="flex flex-col gap-4 w-[75%] max-lg:w-full h-full">
                         <InfoCard src={code} title={"No-Code Simplicity"} text={"Designed for business users, not just data scientists"}/>
                         <InfoCard src={loop} title={"Seamless Integrations"} text={"Connect with your CRM, eCommerce, and databases."}/>
                     </div>

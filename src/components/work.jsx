@@ -9,7 +9,7 @@ function Work(){
     const width = "w-[43%] max-md:w-[90%]"
     return(
         <div className="flex justify-center w-full my-10">
-           <div className="w-[80%] max-md:w-[95%] flex flex-col items-center gap-7">
+           <div className="w-[80%] max-lg:w-[95%] flex flex-col items-center gap-7">
             <div className="w-full flex justify-between max-md:justify-center max-md:text-center">
                 <GradientText title={"HOW IT WORKS"} tag={"Unlock the Power of Your Data with CogniAl"} text={"Organize tasks, track progress, and achieve more-effortlessly."} width={width}/>
                 <div className="self-end max-md:hidden">
