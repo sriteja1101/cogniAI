@@ -8,7 +8,7 @@ function Automation(){
     const width = "w-[45%] max-md:w-[90%]"
     return(
         <div className="flex items-center justify-center my-20">
-            <div className="w-[80%] max-md:w-full flex flex-col items-center justify-center gap-5">
+            <div className="w-[80%] max-md:w-[95%] flex flex-col items-center justify-center gap-5">
                 <div className="flex items-center justify-between w-full max-md:justify-center max-md:text-center">
                     <GradientText title={"USE CASE"} tag={"Optimize Workflows with Smart Automation Tools"} text={"Organize tasks, track progress, and achieve more effortlessly."} width={width}/>
                     <div className="max-md:hidden">
@@ -28,23 +28,23 @@ function Automation(){
 
                             <div className="flex items-center gap-4">
                                 <div className="flex flex-col gap-2">
-                                    <div className="flex items-center gap-2 flex-wrap w-[150px]">
-                                        <div className="w-[30px] h-[30px] bg-[#ffeae2] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#f88d38] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#ffeae2] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#ffeae2] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#f88d38] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#f88d38] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#ffeae2] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#ffeae2] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#f88d38] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#f88d38] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#f88d38] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#f88d38] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#f88d38] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#f88d38] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#f88d38] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#f88d38] rounded-lg"></div>
+                                    <div className="flex items-center gap-2 flex-wrap w-[150px] max-md:w-[120px]">
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
                                     </div>
                                     <div className="flex items-center justify-between gap-2">
                                         <p className="font-semibold">84%</p>
@@ -52,23 +52,23 @@ function Automation(){
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-2">
-                                <div className="flex items-center gap-2 flex-wrap w-[150px]">
-                                        <div className="w-[30px] h-[30px] bg-[#ffeae2] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#ffeae2] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#ffeae2] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#ffeae2] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#ffeae2] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#ffeae2] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#ffeae2] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#ffeae2] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#ffeae2] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#ffeae2] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#f88d38] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#f88d38] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#f88d38] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#f88d38] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#f88d38] rounded-lg"></div>
-                                        <div className="w-[30px] h-[30px] bg-[#f88d38] rounded-lg"></div>
+                                <div className="flex items-center gap-2 flex-wrap w-[150px] max-md:w-[120px]">
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
+                                        <div className="w-[30px] h-[30px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
                                     </div>
                                     <div className="flex items-center justify-between gap-2">
                                         <p className="font-semibold">43%</p>
@@ -105,25 +105,25 @@ function Automation(){
                     <div className="flex items-end gap-3 overflow-x-hidden max-w-full">
                         <div className="flex flex-col items-center gap-2">
                             <span className="text-sm font-medium">13.8%</span>
-                            <div className="w-22 h-18 bg-[#ffeae2] rounded-2xl"></div>
+                            <div className="w-22 h-18 max-md:w-16 bg-[#ffeae2] rounded-2xl"></div>
                             <span className="text-xs text-gray-500 px-2 py-1">18-24</span>
                         </div>
 
                         <div className="flex flex-col items-center gap-2">
                             <span className="text-sm font-medium">32,2%</span>
-                            <div className="w-22 h-45 bg-[#f88d38] rounded-2xl"></div>
+                            <div className="w-22 h-45 max-md:w-16 bg-[#f88d38] rounded-2xl"></div>
                             <span className="text-xs text-white px-2 py-1 bg-black rounded-full">25-34</span>
                         </div>
 
                         <div className="flex flex-col items-center gap-2">
                             <span className="text-sm font-medium">26,9%</span>
-                            <div className="w-22 h-40 bg-[#ffeae2] rounded-2xl"></div>
+                            <div className="w-22 h-40 max-md:w-16 bg-[#ffeae2] rounded-2xl"></div>
                             <span className="text-xs text-gray-500 px-2 py-1">35-44</span>
                         </div>
 
                         <div className="flex flex-col items-center gap-2">
                             <span className="text-sm font-medium">10,8%</span>
-                            <div className="w-22 h-28 bg-[#ffeae2] rounded-2xl"></div>
+                            <div className="w-22 h-28 max-md:w-16 bg-[#ffeae2] rounded-2xl"></div>
                             <span className="text-xs text-gray-500 px-2 py-1">45-54</span>
                         </div>
                     </div>

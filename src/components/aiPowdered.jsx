@@ -8,7 +8,7 @@ import BlackBtn from "./blackBtn"
 function AIPowered(){
     return(
         <div className="flex items-center justify-center mt-15">
-            <div className="w-[70%] max-md:w-full flex flex-col items-center justify-center gap-18 mb-10">
+            <div className="w-[70%] max-md:w-[95%] flex flex-col items-center justify-center gap-18 mb-10">
                 <div className="w-[85%] max-md:w-full">
                     <h2 className="text-3xl max-md:text-xl font-normal text-center leading-[1.3] bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a] to-[#f46800] bg-clip-text text-transparent">CogniAl is an advanced Al-powered data analysis platform designed to transfor raw data into actionable insights.</h2>
                 </div>
