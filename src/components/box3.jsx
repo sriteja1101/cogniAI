@@ -15,7 +15,7 @@ function Box3(){
                             <span className="text-lg font-medium">1948-2002</span>
                         </div>
 
-                    <div className="flex items-end gap-2">
+                    <div className="flex items-end gap-2 overflow-x-hidden">
                         <div className="flex flex-col items-center gap-2">
                             <span className="text-xs font-medium">13.8%</span>
                             <div className="w-17 h-15 bg-[#f88e3830] rounded-xl"></div>

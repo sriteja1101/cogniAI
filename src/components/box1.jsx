@@ -6,14 +6,14 @@ import upRight from "../assets/upRight.png";
 
 function SocialCards({ company, tag, src, growth }) {
   return (
-    <div className="flex justify-between items-center bg-white rounded-full w-full px-3 py-2">
+    <div className="flex justify-between  items-center bg-white rounded-full w-full px-3 py-2">
       <div className="flex gap-2 items-center">
         <div className="p-2 rounded-full bg-[#f5f7fb]">
           <img src={src} alt="social-icons" className="w-5 h-5" />
         </div>
         <div className="flex flex-col">
           <p className="text-sm font-semibold">{company}</p>
-          <span className="text-[10px] text-gray-500">{tag}</span>
+          <span className="text-[9px] text-gray-500">{tag}</span>
         </div>
       </div>
       <div className="bg-[#06a33d] rounded-2xl flex items-center text-white px-2 py-0.5">
@@ -25,7 +25,7 @@ function SocialCards({ company, tag, src, growth }) {
 
 function Box1() {
   return (
-    <div className="w-full h-[190px] bg-[#f5f7fba7] flex flex-col justify-between items-center gap-3 rounded-3xl p-4">
+    <div className="w-full h-[190px] max-md:h-full bg-[#f5f7fba7] flex flex-col justify-between items-center gap-3 rounded-3xl p-4">
       <div className="flex justify-between items-center w-full">
         <p className="text-md font-medium">Integration Tools</p>
         <img
@@ -35,7 +35,7 @@ function Box1() {
         />
       </div>
       <div className="flex flex-col gap-3 w-full">
-        <div className="flex gap-3 items-center w-full">
+        <div className="flex gap-3 max-md:flex-col items-center w-full">
           <SocialCards
             src={gmail}
             company="Gmail"
@@ -49,7 +49,7 @@ function Box1() {
             growth="+6%"
           />
         </div>
-        <div className="flex gap-3 items-center w-full">
+        <div className="flex gap-3 max-md:flex-col items-center w-full">
           <SocialCards
             src={instagram}
             company="Instagram"

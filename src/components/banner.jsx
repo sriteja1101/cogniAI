@@ -8,9 +8,9 @@ function Banner() {
   const width = "w-full"
   return (
     <div className="flex justify-center items-center pb-10">
-      <div className="w-[80%] h-[67vh] bg-[radial-gradient(ellipse_at_bottom,_#ffc590_0%,_#ffc590_15%,_#f0d4d9_40%,_#e0ecf9_60%,_#deeaf6_100%)] rounded-4xl flex px-6">
-        <div className="w-full h-full flex justify-between items-center">
-          <div className="w-[35%] h-full flex flex-col justify-between py-6">
+      <div className="w-[80%] max-md:w-full h-[67vh] max-md:h-full bg-[radial-gradient(ellipse_at_bottom,_#ffc590_0%,_#ffc590_15%,_#f0d4d9_40%,_#e0ecf9_60%,_#deeaf6_100%)] rounded-4xl flex px-6">
+        <div className="w-full h-full flex max-md:flex-col max-md:justify-center justify-between items-center">
+          <div className="w-[35%] max-md:w-full h-full flex flex-col justify-between py-6">
             <div className="w-full">
               <GradientText
                 title={"REAL STORIES"}
@@ -50,11 +50,11 @@ function Banner() {
             </div>
           </div>
 
-          <div className="w-[35%] h-full flex justify-center ">
-            <img src={women} alt="women" className="w-full h-full mt-[12px]" />
+          <div className="w-[35%] h-full flex justify-center max-md:hidden">
+            <img src={women} alt="women" className="w-full h-full mt-[12px] max-md:hidden" />
           </div>
 
-          <div className="w-[20%] h-full flex flex-col justify-between py-6">
+          <div className="w-[20%] max-md:w-full max-md:gap-4 h-full flex flex-col justify-between py-6">
             <div className="flex flex-col gap-2 p-3 w-full bg-[#f6f2f2bc] rounded-3xl">
               <div className="flex justify-between items-center w-full">
                 <h3>Resource Allocation</h3>

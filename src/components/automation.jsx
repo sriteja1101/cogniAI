@@ -5,17 +5,19 @@ import profile2 from "../assets/profile2.png";
 import profile3 from "../assets/profile3.png";
 import profile4 from "../assets/profile4.png";
 function Automation(){
-    const width = "w-[45%]"
+    const width = "w-[45%] max-md:w-[90%]"
     return(
         <div className="flex items-center justify-center my-20">
-            <div className="w-[80%] flex flex-col items-center justify-center gap-5">
-                <div className="flex items-center justify-between w-full">
+            <div className="w-[80%] max-md:w-full flex flex-col items-center justify-center gap-5">
+                <div className="flex items-center justify-between w-full max-md:justify-center max-md:text-center">
                     <GradientText title={"USE CASE"} tag={"Optimize Workflows with Smart Automation Tools"} text={"Organize tasks, track progress, and achieve more effortlessly."} width={width}/>
+                    <div className="max-md:hidden">
                     <BlackBtn text={"See AI in Action"}/>
+                    </div>
                 </div>
 
-                <div className="flex w-full items-center gap-5">
-                    <div className="w-[35%] bg-[#f5f7fb] flex flex-col justify-between gap-3 rounded-3xl py-5 px-6">
+                <div className="flex w-full max-md:flex-col items-center gap-5">
+                    <div className="w-[35%] max-md:w-full bg-[#f5f7fb] flex flex-col justify-between gap-3 rounded-3xl py-5 px-6">
                         <div className="flex flex-col gap-2">
                             <h3 className="text-xl font-medium">For Business Leaders</h3>
                             <p className="text-md text-gray-500">Identify trends & opportunities in real-time to make data-driven decisions and stay ahead of the competition.</p>
@@ -77,8 +79,8 @@ function Automation(){
                         </div>
                     </div>
 
-                    <div className="w-[65%] bg-[#f5f7fb] flex justify-between gap-3 rounded-3xl py-5 px-6">
-                <div className="w-[50%] flex flex-col gap-3 justify-between">
+                    <div className="w-[65%] max-md:w-full bg-[#f5f7fb] flex max-md:flex-col justify-between gap-3 rounded-3xl py-5 px-6">
+                <div className="w-[50%] max-md:w-full flex flex-col gap-3 justify-between">
                    <div className="flex flex-col gap-2">
                             <h3 className="text-xl font-medium">For Marketing Teams</h3>
                             <p className="text-md text-gray-500">Identify trends & opportunities in real-time to make data-driven decisions and stay ahead of the competition.</p>
@@ -91,7 +93,7 @@ function Automation(){
                     </div>
                 </div>
 
-                <div className="w-[50%] bg-white rounded-2xl p-3 flex flex-col gap-7 items-center justify-center">
+                <div className="w-[50%] max-md:w-full bg-white rounded-2xl p-3 flex flex-col gap-7 items-center justify-center">
                     <div className="self-start flex flex-col gap-2">
                         <h3 className="text-md font-medium">Age Based User Trends</h3>
                         <div className="flex flex-col">
