@@ -5,8 +5,17 @@ import fileUpload from "../assets/fileUpload.png";
 import wristWatch from "../assets/wristWatch.png";
 import lineChart from "../assets/lineChart.png";
 import trophy from "../assets/trophy.png";
+
+
+
 function Work() {
   const width = "w-[43%] max-md:w-[90%]";
+  const data = [
+    {image: `${fileUpload}`, title: "Upload & Connect Seamlessly", text: "Easily import data from spreadsheets, databases, and APIs effortlessly for seamless integration and efficient workflows."},
+    {image: `${wristWatch}`, title: "Upload & Connect Seamlessly", text: "Easily import data from spreadsheets, databases, and APIs effortlessly for seamless integration and efficient workflows."},
+    {image: `${lineChart}`, title: "Upload & Connect Seamlessly", text: "Easily import data from spreadsheets, databases, and APIs effortlessly for seamless integration and efficient workflows."},
+    {image: `${trophy}`, title: "Upload & Connect Seamlessly", text: "Easily import data from spreadsheets, databases, and APIs effortlessly for seamless integration and efficient workflows."}
+  ]
   return (
     <div className="flex justify-center w-full my-20">
       <div className="w-[80%] max-lg:w-[95%] flex flex-col items-center gap-7">
@@ -24,40 +33,14 @@ function Work() {
           </div>
         </div>
 
-        <div className="w-full flex gap-4 flex-wrap max-md:flex-col">
-          <div className="flex gap-4 items-center w-full h-[30vh] max-lg:h-[20vh] max-xl:h-[25vh] max-md:h-fit max-md:flex-col">
-            <div className="w-[50%] max-md:w-full h-full">
-              <InfoCard
-                src={fileUpload}
-                title="Upload & Connect Seamlessly"
-                text="Easily import data from spreadsheets, databases, and APIs effortlessly for seamless integration and efficient workflows."
-              />
+        <div className="w-full flex flex-wrap justify-between gap-y-4 max-md:flex-col h-full mb-10">
+        {data.map((item)=>{
+          return(
+            <div className="flex w-[49%] max-md:w-full items-center">
+              <InfoCard src={item.image} title={item.title} text={item.text} />
             </div>
-            <div className="w-[50%] max-md:w-full h-full">
-              <InfoCard
-                src={wristWatch}
-                title="Al-Driven Processing in Real-Time"
-                text="No coding required! Al instantly cleans, analyzes, and structures your data for seamless organization."
-              />
-            </div>
-          </div>
-
-          <div className="flex gap-4 items-center w-full h-[30vh] max-lg:h-[20vh] max-xl:h-[25vh] max-md:h-fit max-md:flex-col">
-            <div className="w-[50%] max-md:w-full h-full">
-              <InfoCard
-                src={lineChart}
-                title="Gain Actionable Insights Instantly"
-                text="Generate reports, visualize trends, and detect patterns with Al-powered analytics."
-              />
-            </div>
-            <div className="w-[50%] max-md:w-full h-full">
-              <InfoCard
-                src={trophy}
-                title="Make Smarter, Data-Driven Decisions"
-                text="Use Al recommendations to optimize strategies, enhance decision-making, boost efficiency, and drive business growth."
-              />
-            </div>
-          </div>
+          )
+        })}
         </div>
       </div>
     </div>
