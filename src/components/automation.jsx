@@ -8,7 +8,7 @@ function Automation() {
   const width = "w-[45%] max-md:w-[90%]";
   return (
     <div className="flex items-center justify-center my-20">
-      <div className="w-[80%] max-lg:w-[95%] flex flex-col items-center justify-center gap-5">
+      <div className="w-[80%] max-lg:w-[95%] max-xl:w-[90%] flex flex-col items-center justify-center gap-5">
         <div className="flex items-center justify-between w-full max-md:justify-center max-md:text-center">
           <GradientText
             title={"USE CASE"}
@@ -40,7 +40,7 @@ function Automation() {
                 </h3>
 
                 <div className="flex items-center gap-4">
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-2 overflow-hidden">
                     <div className="flex items-center gap-2 flex-wrap w-[150px] max-md:w-[120px]">
                       <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
                       <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
@@ -64,7 +64,7 @@ function Automation() {
                       <span className="text-gray-500 text-sm">Fashion</span>
                     </div>
                   </div>
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-2 overflow-hidden">
                     <div className="flex items-center gap-2 flex-wrap w-[150px] max-md:w-[120px]">
                       <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
                       <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>

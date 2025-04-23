@@ -7,7 +7,7 @@ function Remainder({ src, title, text }) {
       {src ? (
         <img src={src} alt={title} className="w-5" />
       ) : (
-        <div className="self-center w-5 h-5 max-md:w-4 max-md:h-4 rounded-full border-2 border-[#80808044]"></div>
+        <div className="self-center w-[18px] h-[18px] min-w-[18px] min-h-[18px] shrink-0 rounded-full border-2 border-[#80808044]"></div>
       )}
       <div className="flex flex-col">
         <p className="text-sm font-medium">{title}</p>

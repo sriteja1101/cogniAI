@@ -10,7 +10,7 @@ function Features() {
   const width = "w-[55%] max-md:w-[90%]";
   return (
     <div className="flex justify-center w-full my-20">
-      <div className="w-[80%] max-lg:w-[95%] flex flex-col items-center gap-7">
+      <div className="w-[80%] max-lg:w-[95%] max-xl:w-[90%] flex flex-col items-center gap-7">
         <div className="w-full items-center flex justify-center text-center">
           <GradientText
             title={"KEY FEATURES"}

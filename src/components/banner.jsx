@@ -8,7 +8,7 @@ function Banner() {
   const width = "w-full";
   return (
     <div className="flex justify-center items-center mt-20 mb-5">
-      <div className="w-[80%] max-lg:w-[95%] h-[67vh] max-xl:h-[76vh] max-lg:h-full bg-[radial-gradient(ellipse_at_bottom,_#ffc590_0%,_#ffc590_15%,_#f0d4d9_40%,_#e0ecf9_60%,_#deeaf6_100%)] rounded-4xl flex px-6">
+      <div className="w-[80%] max-lg:w-[95%] max-xl:w-[90%] h-[67vh] max-xl:h-[76vh] max-lg:h-full bg-[radial-gradient(ellipse_at_bottom,_#ffc590_0%,_#ffc590_15%,_#f0d4d9_40%,_#e0ecf9_60%,_#deeaf6_100%)] rounded-4xl flex px-6">
         <div className="w-full h-full flex max-lg:flex-col max-lg:justify-center justify-between items-center">
           <div className="w-[35%] max-lg:w-full h-full flex flex-col justify-between max-lg:justify-between py-6">
             <div className="w-full">

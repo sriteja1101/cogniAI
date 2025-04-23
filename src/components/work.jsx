@@ -18,7 +18,7 @@ function Work() {
   ]
   return (
     <div className="flex justify-center w-full my-20">
-      <div className="w-[80%] max-lg:w-[95%] flex flex-col items-center gap-7">
+      <div className="w-[80%] max-xl:w-[90%] max-lg:w-[95%] flex flex-col items-center gap-7">
         <div className="w-full flex justify-between max-md:justify-center max-md:text-center">
           <GradientText
             title={"HOW IT WORKS"}
