@@ -24,22 +24,22 @@ function Box2() {
         <div className="flex items-center w-full gap-1 py-1.5">
           <div className="flex flex-col w-[35%] gap-1">
             <div className="h-3.5 rounded-full bg-[#06a33d] "></div>
-            <span className="text-[7px] pl-0.5">Basic Information</span>
+            <span className="text-[7px] pl-0.5 text-nowrap overflow-hidden overflow-ellipsis">Basic Information</span>
           </div>
 
           <div className="flex flex-col w-[25%] gap-1 justify-center">
             <div className="h-3.5 rounded-full bg-[#1b76f3] "></div>
-            <span className="text-[7px] pl-0.5">Content & Activity</span>
+            <span className="text-[7px] pl-0.5 text-nowrap overflow-hidden overflow-ellipsis">Content & Activity</span>
           </div>
 
           <div className="flex flex-col w-[15%] gap-1 justify-center">
             <div className="h-3.5 rounded-full bg-[#f36700] "></div>
-            <span className="text-[7px] pl-0.5">Social Links</span>
+            <span className="text-[7px] pl-0.5 text-nowrap overflow-hidden overflow-ellipsis">Social Links</span>
           </div>
 
           <div className="flex flex-col w-[25%] gap-1 justify-center">
             <div className="h-3.5 rounded-full bg-white"></div>
-            <span className="text-[7px] pl-0.5 text-gray-400">
+            <span className="text-[7px] pl-0.5 text-nowrap overflow-hidden overflow-ellipsis text-gray-400">
               Verification
             </span>
           </div>
