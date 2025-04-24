@@ -1,3 +1,4 @@
+import BoxTitle from "./boxTitle";
 import upRight from "../assets/upRight.png";
 import tick from "../assets/tick.svg";
 
@@ -18,37 +19,20 @@ function Remainder({ src, title, text }) {
 }
 
 function Box4() {
+  const remainderData = [
+    {id: 0, src: tick, title: "Content Refresh Alert", text: "Post the content, share insights and stireactive Comments!"},
+    {id: 1, src: "", title: "Engagement Check-in", text: "Reply to comments, interact with followers, and spark conversations today."},
+    {id: 2, src: "",  title: "Analytics Review Day", text:  "Time to check your name your reich, impresons and growth to refine you."},
+  ]
   return (
     <div className="w-full h-full bg-[#f5f7fba7] flex flex-col justify-between gap-2 items-center p-3 rounded-3xl">
-      <div className="flex justify-between items-center w-full">
-        <p className="text-md font-medium">Remainders</p>
-        <img
-          src={upRight}
-          alt="up-right-icon"
-          className="p-2 bg-white rounded-full w-7"
-        />
-      </div>
-      <div
-        className="w-full flex flex-col items-center
-            gap-2"
-      >
-        <Remainder
-          src={tick}
-          title={"Content Refresh Alert"}
-          text={"Post the content, share insights and stireactive Comments!"}
-        />
-        <Remainder
-          title={"Engagement Check-in"}
-          text={
-            "Reply to comments, interact with followers, and spark conversations today."
-          }
-        />
-        <Remainder
-          title={"Analytics Review Day"}
-          text={
-            "Time to check your name your reich, impresons and growth to refine you."
-          }
-        />
+      <BoxTitle title={"Remainders"} src={upRight}/>
+      <div className="w-full flex flex-col items-center gap-2">
+        {remainderData.map((item)=>{
+          return(
+            <Remainder key={item.id} src={item.src} title={item.title} text={item.text}/>
+          )
+        })}
       </div>
     </div>
   );

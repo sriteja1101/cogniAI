@@ -7,14 +7,13 @@ import lineChart from "../assets/lineChart.png";
 import trophy from "../assets/trophy.png";
 
 
-
 function Work() {
   const width = "w-[43%] max-md:w-[90%]";
   const data = [
-    {image: fileUpload, title: "Upload & Connect Seamlessly", text: "Easily import data from spreadsheets, databases, and APIs effortlessly for seamless integration and efficient workflows."},
-    {image: wristWatch, title: "Al-Driven Processing in Real-Time", text: "No coding required! Al instantly cleans, analyzes, and structures your data for seamless organization."},
-    {image: lineChart, title: "Gain Actionable Insights Instantly", text: "Generate reports, visualize trends, and detect patterns with Al-powered analytics."},
-    {image: trophy, title: "Make Smarter, Data-Driven Decisions", text: "Use Al recommendations to optimize strategies, enhance decision-making, boost efficiency, and drive business growth."}
+    {id: 0, image: fileUpload, title: "Upload & Connect Seamlessly", text: "Easily import data from spreadsheets, databases, and APIs effortlessly for seamless integration and efficient workflows."},
+    {id: 1, image: wristWatch, title: "Al-Driven Processing in Real-Time", text: "No coding required! Al instantly cleans, analyzes, and structures your data for seamless organization."},
+    {id: 2, image: lineChart, title: "Gain Actionable Insights Instantly", text: "Generate reports, visualize trends, and detect patterns with Al-powered analytics."},
+    {id: 3, image: trophy, title: "Make Smarter, Data-Driven Decisions", text: "Use Al recommendations to optimize strategies, enhance decision-making, boost efficiency, and drive business growth."}
   ]
   return (
     <div className="flex justify-center w-full my-20">
@@ -33,11 +32,11 @@ function Work() {
           </div>
         </div>
 
-        <div className="w-full flex flex-wrap justify-between gap-y-3 max-md:flex-col h-full">
+        <div className="w-full flex flex-wrap gap-3 max-md:flex-col h-full">
         {data.map((item)=>{
           return(
-            <div className="flex w-[49.5%] max-md:w-full items-center">
-              <InfoCard src={item.image} title={item.title} text={item.text} />
+            <div className="flex flex-1/3 max-md:flex-1 items-center">
+              <InfoCard key={item.id} src={item.image} title={item.title} text={item.text} />
             </div>
           )
         })}

@@ -4,8 +4,18 @@ import profile from "../assets/profile.png";
 import profile2 from "../assets/profile2.png";
 import profile3 from "../assets/profile3.png";
 import profile4 from "../assets/profile4.png";
+import { BarGraph } from "./box3";
 function Automation() {
   const width = "w-[45%] max-md:w-[90%]";
+  const imageData = [profile, profile2, profile3, profile4]
+  const graphData = [
+    {id: 0, percentage: 13.8, range: "18-24"},
+    {id: 1, percentage: 32.2, range: "25-34"},
+    {id: 2, percentage: 26.9, range: "35-44"},
+    {id: 3, percentage: 17.9, range: "45-54"},
+    {id: 4, percentage: 14.2, range: "55-64"},
+    {id: 5, percentage: 9.5, range: "65+"},
+  ]
   return (
     <div className="flex items-center justify-center my-20">
       <div className="w-[80%] max-lg:w-[95%] max-xl:w-[90%] flex flex-col items-center justify-center gap-5">
@@ -103,31 +113,20 @@ function Automation() {
                     data-driven decisions and stay ahead of the competition.
                   </p>
                 </div>
-                <div className="flex items-center">
-                  <img
-                    src={profile}
+                <div className="flex items-center pl-2">
+                  {imageData.map((item)=>{
+                    return(
+                      <img
+                    src={item}
                     alt="profile"
-                    className="w-13 rounded-full border-2"
+                    className="w-13 rounded-full border-2 ml-[-15px]"
                   />
-                  <img
-                    src={profile4}
-                    alt="profile"
-                    className="w-13 rounded-full ml-[-20px] border-2"
-                  />
-                  <img
-                    src={profile3}
-                    alt="profile"
-                    className="w-13 rounded-full ml-[-20px] border-2"
-                  />
-                  <img
-                    src={profile2}
-                    alt="profile"
-                    className="w-13 rounded-full ml-[-20px] border-2"
-                  />
+                    )
+                  })}
                 </div>
               </div>
 
-              <div className="w-[50%] max-md:w-full bg-white rounded-2xl p-3 flex flex-col gap-5 items-center justify-center">
+              <div className="w-[50%] max-md:w-full bg-white rounded-2xl p-3 flex flex-col gap-5 justify-around">
                 <div className="self-start flex flex-col gap-2">
                   <h3 className="text-md font-medium">Age Based User Trends</h3>
                   <div className="flex flex-col">
@@ -137,39 +136,10 @@ function Automation() {
                     <span className="text-lg font-medium">1948-2002</span>
                   </div>
                 </div>
-
                 <div className="flex items-end gap-3 overflow-x-hidden max-w-full">
-                  <div className="flex flex-col items-center gap-2">
-                    <span className="text-sm font-medium">13.8%</span>
-                    <div className="w-22 h-18 max-md:w-16 bg-[#ffeae2] rounded-2xl"></div>
-                    <span className="text-xs text-gray-500 px-2 py-1">
-                      18-24
-                    </span>
-                  </div>
-
-                  <div className="flex flex-col items-center gap-2">
-                    <span className="text-sm font-medium">32,2%</span>
-                    <div className="w-22 h-45 max-md:w-16 bg-[#f88d38] rounded-2xl"></div>
-                    <span className="text-xs text-white px-2 py-1 bg-black rounded-full">
-                      25-34
-                    </span>
-                  </div>
-
-                  <div className="flex flex-col items-center gap-2">
-                    <span className="text-sm font-medium">26,9%</span>
-                    <div className="w-22 h-40 max-md:w-16 bg-[#ffeae2] rounded-2xl"></div>
-                    <span className="text-xs text-gray-500 px-2 py-1">
-                      35-44
-                    </span>
-                  </div>
-
-                  <div className="flex flex-col items-center gap-2">
-                    <span className="text-sm font-medium">10,8%</span>
-                    <div className="w-22 h-28 max-md:w-16 bg-[#ffeae2] rounded-2xl"></div>
-                    <span className="text-xs text-gray-500 px-2 py-1">
-                      45-54
-                    </span>
-                  </div>
+                  {graphData.map((item)=>{
+                    return <BarGraph key={item.id} percentage={item.percentage} range={item.range}/>
+                  })}
                 </div>
               </div>
             </div>

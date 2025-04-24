@@ -4,12 +4,50 @@ import women from "../assets/women.png";
 import upRight from "../assets/upRight.png";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+
+function BannerCard({src, text}){
+  return(
+    <div className="flex gap-2 items-center w-fit max-lg:w-full border-2 p-2 rounded-full border-[#f5f5f55d] bg-[#ffffff39]">
+    <img src={src} alt="accept" className="w-4" />
+    <span className="text-sm">{text}</span>
+  </div>
+  )
+}
+
+function Progress({text, color, value}){
+  return(
+    <div className="w-[30%] max-lg:w-[20%] h-full flex flex-col gap-2 ">
+                  <CircularProgressbar
+                    value={value}
+                    text={text}
+                    strokeWidth={12}
+                    styles={buildStyles({
+                      textColor: "gray",
+                      trailColor: "#ffffff63",
+                      pathColor: {color},
+                      textSize: "20px",
+                    })}
+                  />
+                </div>
+  )
+}
 function Banner() {
   const width = "w-full";
+  const cardsData = [
+    {src: accept, text: "Advance career growth opportunities"},
+    {src: accept, text: "Communicate ideas persuasively"},
+    {src: accept, text: "Boost professional confidence daily"},
+    {src: accept, text: "Advance career growth opportunities"},
+  ]
+  // const progressData = [
+  //   {text: "58%", value: 58, color: `rgba(244,104,0, ${100 / 100})`},
+  //   {text: "25%", value: 25, color: `rgba(13, 176, 68, ${100 / 100})`},
+  //   {text: "12%", value: 12, color: `rgba(14, 61, 201 , ${100 / 100})`},
+  // ]
   return (
     <div className="flex justify-center items-center mt-20 mb-5">
-      <div className="w-[80%] max-lg:w-[95%] max-xl:w-[90%] h-[67vh] max-xl:h-[76vh] max-lg:h-full bg-[radial-gradient(ellipse_at_bottom,_#ffc590_0%,_#ffc590_15%,_#f0d4d9_40%,_#e0ecf9_60%,_#deeaf6_100%)] rounded-4xl flex px-6">
-        <div className="w-full h-full flex max-lg:flex-col max-lg:justify-center justify-between items-center">
+      <div className="w-[80%] max-lg:w-[95%] max-xl:w-[90%] h-full bg-[radial-gradient(ellipse_at_bottom,_#ffc590_0%,_#ffc590_15%,_#f0d4d9_40%,_#e0ecf9_60%,_#deeaf6_100%)] rounded-4xl flex px-6">
+        <div className="w-full h-full flex max-lg:flex-col max-lg:justify-center justify-between">
           <div className="w-[35%] max-lg:w-full h-full flex flex-col justify-between max-lg:justify-between py-6">
             <div className="w-full">
               <GradientText
@@ -22,31 +60,11 @@ function Banner() {
               />
             </div>
             <div className="flex flex-col max-lg:items-center gap-2 py-5 w-full">
-              <div className="flex gap-2 items-center w-fit max-lg:w-full border-2 p-2 rounded-full border-[#f5f5f55d] bg-[#ffffff63]">
-                <img src={accept} alt="accept" className="w-4" />
-                <span className="text-sm">
-                  Advance career growth opportunities
-                </span>
-              </div>
-
-              <div className="flex gap-2 items-center w-fit max-lg:w-full border-2 p-2 rounded-full border-[#f5f5f55d] bg-[#ffffff39]">
-                <img src={accept} alt="accept" className="w-4" />
-                <span className="text-sm">Communicate ideas persuasively</span>
-              </div>
-
-              <div className="flex gap-2 items-center w-fit max-lg:w-full border-2 p-2 rounded-full border-[#f5f5f55d] bg-[#ffffff1a]">
-                <img src={accept} alt="accept" className="w-4" />
-                <span className="text-sm">
-                  Develop strong networking abilities
-                </span>
-              </div>
-
-              <div className="flex gap-2 items-center w-fit max-lg:w-full border-2 p-2 rounded-full border-[#f5f5f55d] bg-[#ffffff39]">
-                <img src={accept} alt="accept" className="w-4" />
-                <span className="text-sm">
-                  Boost professional confidence daily
-                </span>
-              </div>
+                {cardsData.map((item)=>{
+                  return(
+                    <BannerCard src= {item.src} text = {item.text}/>
+                  )
+                })}
             </div>
           </div>
 
@@ -68,19 +86,7 @@ function Banner() {
               </div>
 
               <div className="flex justify-between items-center gap-2 w-full mt-2">
-                <div className="w-[30%] max-lg:w-[20%] h-full flex flex-col gap-2 ">
-                  <CircularProgressbar
-                    value={58}
-                    text={"58%"}
-                    strokeWidth={12}
-                    styles={buildStyles({
-                      textColor: "gray",
-                      trailColor: "#ffffff63",
-                      pathColor: `rgba(244,104,0, ${100 / 100})`,
-                      textSize: "20px",
-                    })}
-                  />
-                </div>
+                
                 <div className="w-[30%] max-lg:w-[20%]  h-full flex flex-col gap-2">
                   <CircularProgressbar
                     value={25}

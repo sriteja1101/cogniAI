@@ -1,12 +1,13 @@
+import BoxTitle from "./boxTitle";
 import gmail from "../assets/gmail.svg";
 import instagram from "../assets/instagram.svg";
 import twitter from "../assets/twitter.svg";
 import facebook from "../assets/facebook.svg";
 import upRight from "../assets/upRight.png";
 
-function SocialCards({ company, tag, src, growth }) {
+function SocialCard({ src, company, tag, growth }) {
   return (
-    <div className="flex justify-between  items-center bg-white rounded-full w-full px-3 py-2">
+    <div className="flex justify-between items-center bg-white rounded-full flex-1/3 max-md:flex-1/2 px-3 py-2">
       <div className="flex gap-2 items-center">
         <div className="p-2 rounded-full bg-[#f5f7fb]">
           <img src={src} alt="social-icons" className="w-5 h-5" />
@@ -24,44 +25,33 @@ function SocialCards({ company, tag, src, growth }) {
 }
 
 function Box1() {
+  const data = [
+    { src: gmail, company: "Gmail", tag: "Email Sent: 1,200", growth: "+8%" },
+    { src: facebook, company: "Facebook", tag: "Ad CTR: 4.2%", growth: "+6%" },
+    {
+      src: instagram,
+      company: "Instagram",
+      tag: "Profile Visits: 18.5k",
+      growth: "+12%",
+    },
+    { src: twitter, company: "X (Twitter)", tag: "Tweets: 150", growth: "+5%" },
+  ];
   return (
     <div className="w-full h-full bg-[#f5f7fba7] flex flex-col justify-between items-center gap-3 rounded-3xl p-4">
-      <div className="flex justify-between items-center w-full">
-        <p className="text-md font-medium">Integration Tools</p>
-        <img
-          src={upRight}
-          alt="up-right-icon"
-          className="p-2 bg-white rounded-full w-7"
-        />
-      </div>
+      <BoxTitle title={"Integration Tools"} src={upRight} />
       <div className="flex flex-col gap-3 w-full">
-        <div className="flex gap-3 max-md:flex-col items-center w-full">
-          <SocialCards
-            src={gmail}
-            company="Gmail"
-            tag="Email Sent: 1,200"
-            growth="+8%"
-          />
-          <SocialCards
-            src={facebook}
-            company="Facebook"
-            tag="Ad CTR: 4.2%"
-            growth="+6%"
-          />
-        </div>
-        <div className="flex gap-3 max-md:flex-col items-center w-full">
-          <SocialCards
-            src={instagram}
-            company="Instagram"
-            tag="Profile Visits: 18.5k"
-            growth="+12%"
-          />
-          <SocialCards
-            src={twitter}
-            company="X (Twitter)"
-            tag="Tweets: 150"
-            growth="+5%"
-          />
+        <div className="w-full flex flex-wrap justify-between gap-2 h-full">
+          {data.map((item, index) => {
+            return (
+              <SocialCard
+                key={index}
+                src={item.src}
+                company={item.company}
+                tag={item.tag}
+                growth={item.growth}
+              />
+            );
+          })}
         </div>
       </div>
     </div>
