@@ -11,4 +11,4 @@ function BoxTitle({ title, src }) {
   );
 }
 
-export default BoxTitle
+export default BoxTitle;

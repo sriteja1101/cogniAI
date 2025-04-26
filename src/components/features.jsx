@@ -7,47 +7,65 @@ import loop from "../assets/loop.png";
 import more from "../assets/more.png";
 import internet from "../assets/internet.png";
 
-function AutomationData({src, title, text, size}){
-  return(
+function AutomationData({ src, title, text, size }) {
+  return (
     <div className="flex items-center justify-between gap-2 w-full bg-[#f6f2f2bc] p-2 rounded-2xl">
-    <div className="flex items-center gap-4">
-      <div className="p-2 bg-[#f6f2f2bc] rounded-full">
-        <img
-          src={src}
-          alt="internet"
-          className="w-4 bg-white"
-        />
+      <div className="flex items-center gap-4">
+        <div className="p-2 bg-[#f6f2f2bc] rounded-full">
+          <img src={src} alt="internet" className="w-4 bg-white" />
+        </div>
+        <div className="w-[80%]">
+          <span className="text-sm font-bold">{title}</span>
+          <p className="text-[10px]">{text}</p>
+        </div>
       </div>
-      <div className="w-[80%]">
-        <span className="text-sm font-bold">
-         {title}
-        </span>
-        <p className="text-[10px]">
-          {text}
-        </p>
-      </div>
+      <span className="text-xs text-gray-500 text-nowrap">{size}</span>
     </div>
-    <span className="text-xs text-gray-500 text-nowrap">
-      {size}
-    </span>
-  </div>
-  )
+  );
 }
 function Features() {
   const width = "w-[55%] max-md:w-[90%]";
   const infoData1 = [
-    {src: analytics, title: "Predictive Analytics", text: "Forecast trends with Al-driven insights."},
-    {src: folder, title: "Real-Time Reporting", text: "Interactive dashboards for better decision-making."},
-  ]
+    {
+      src: analytics,
+      title: "Predictive Analytics",
+      text: "Forecast trends with Al-driven insights.",
+    },
+    {
+      src: folder,
+      title: "Real-Time Reporting",
+      text: "Interactive dashboards for better decision-making.",
+    },
+  ];
   const infoData2 = [
-    {src: code, title: "No-Code Simplicity", text: "Designed for business users, not just data scientists"},
-    {src: loop, title: "Seamless Integrations", text: "Connect with your CRM, eCommerce, and databases."},
-  ]
+    {
+      src: code,
+      title: "No-Code Simplicity",
+      text: "Designed for business users, not just data scientists",
+    },
+    {
+      src: loop,
+      title: "Seamless Integrations",
+      text: "Connect with your CRM, eCommerce, and databases.",
+    },
+  ];
 
   const automationData = [
-    {id:0, src: internet, title: "Content Refresh Alert", text: "Post fresh content, share insights, and stay active. Consistency is key!", size: "20MB"},
-    {id:1, src: internet, title: "Engagement Boost Reminder", text: "hare valuable content, post consistently, and keep your audience coming back!", size: "20MB"},
-  ]
+    {
+      id: 0,
+      src: internet,
+      title: "Content Refresh Alert",
+      text: "Post fresh content, share insights, and stay active. Consistency is key!",
+      size: "20MB",
+    },
+    {
+      id: 1,
+      src: internet,
+      title: "Engagement Boost Reminder",
+      text: "hare valuable content, post consistently, and keep your audience coming back!",
+      size: "20MB",
+    },
+  ];
   function smallBox() {
     const boxes = [];
     for (let i = 0; i < 17; i++) {
@@ -71,14 +89,10 @@ function Features() {
 
         <div className="flex items-center max-md:flex-col justify-center gap-4 w-full">
           <div className="flex flex-col gap-4 w-[75%] max-lg:w-full h-full">
-            {infoData1.map((item)=>{
-              return(
-                <InfoCard
-              src={item.src}
-              title={item.title}
-              text={item.text}
-            />
-              )
+            {infoData1.map((item) => {
+              return (
+                <InfoCard src={item.src} title={item.title} text={item.text} />
+              );
             })}
           </div>
 
@@ -89,7 +103,7 @@ function Features() {
 
               <div className="w-full flex items-center gap-2 mt-1">
                 <div className="h-6 bg-[#e9e6e6] w-3 rounded-l-2xl"></div>
-                  {smallBox()}
+                {smallBox()}
                 <div className="h-6 bg-[#e9e6e6] w-3 rounded-r-2xl"></div>
               </div>
 
@@ -101,11 +115,17 @@ function Features() {
               </div>
 
               <div className="flex items-center flex-col w-full gap-2">
-               {automationData.map((item)=>{
-                return(
-                  <AutomationData key={item.id} src={item.src} title={item.title} text={item.text} size={item.size}/>
-                )
-               })}
+                {automationData.map((item) => {
+                  return (
+                    <AutomationData
+                      key={item.id}
+                      src={item.src}
+                      title={item.title}
+                      text={item.text}
+                      size={item.size}
+                    />
+                  );
+                })}
               </div>
             </div>
 
@@ -120,14 +140,10 @@ function Features() {
           </div>
 
           <div className="flex flex-col gap-4 w-[75%] max-lg:w-full h-full">
-          {infoData2.map((item)=>{
-              return(
-                <InfoCard
-              src={item.src}
-              title={item.title}
-              text={item.text}
-            />
-              )
+            {infoData2.map((item) => {
+              return (
+                <InfoCard src={item.src} title={item.title} text={item.text} />
+              );
             })}
           </div>
         </div>

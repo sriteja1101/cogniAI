@@ -7,15 +7,29 @@ import profile4 from "../assets/profile4.png";
 import { BarGraph } from "./box3";
 function Automation() {
   const width = "w-[45%] max-md:w-[90%]";
-  const imageData = [profile, profile2, profile3, profile4]
+  const imageData = [profile, profile2, profile3, profile4];
   const graphData = [
-    {id: 0, percentage: 13.8, range: "18-24"},
-    {id: 1, percentage: 32.2, range: "25-34"},
-    {id: 2, percentage: 26.9, range: "35-44"},
-    {id: 3, percentage: 17.9, range: "45-54"},
-    {id: 4, percentage: 14.2, range: "55-64"},
-    {id: 5, percentage: 9.5, range: "65+"},
-  ]
+    { id: 0, percentage: 13.8, range: "18-24" },
+    { id: 1, percentage: 32.2, range: "25-34" },
+    { id: 2, percentage: 26.9, range: "35-44" },
+    { id: 3, percentage: 17.9, range: "45-54" },
+    { id: 4, percentage: 14.2, range: "55-64" },
+    { id: 5, percentage: 9.5, range: "65+" },
+  ];
+  const colors = [
+    "#ffeae2",
+    "#f88d38",
+    "#ffeae2",
+    "#ffeae2",
+    "#f88d38",
+    "#f88d38",
+    "#ffeae2",
+    "#ffeae2",
+    ...Array(8).fill("#f88d38"),
+  ];
+
+  const colors2 = [...Array(10).fill("#ffeae2"), ...Array(6).fill("#f88d38")];
+
   return (
     <div className="flex items-center justify-center my-20">
       <div className="w-[80%] max-lg:w-[95%] max-xl:w-[90%] flex flex-col items-center justify-center gap-5">
@@ -52,22 +66,13 @@ function Automation() {
                 <div className="flex items-center gap-4">
                   <div className="flex flex-col gap-2 overflow-hidden">
                     <div className="flex items-center gap-2 flex-wrap w-[150px] max-md:w-[120px]">
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
+                      {colors.map((color, index) => (
+                        <div
+                          key={index}
+                          className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] rounded-lg"
+                          style={{ backgroundColor: color }}
+                        />
+                      ))}
                     </div>
                     <div className="flex items-center justify-between gap-2">
                       <p className="font-semibold">84%</p>
@@ -76,22 +81,13 @@ function Automation() {
                   </div>
                   <div className="flex flex-col gap-2 overflow-hidden">
                     <div className="flex items-center gap-2 flex-wrap w-[150px] max-md:w-[120px]">
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#ffeae2] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
-                      <div className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] bg-[#f88d38] rounded-lg"></div>
+                      {colors2.map((color, index) => (
+                        <div
+                          key={index}
+                          className="w-[30px] h-[30px] max-lg:w-[25px] max-lg:h-[25px] max-md:w-[23px] max-md:h-[23px] rounded-lg"
+                          style={{ backgroundColor: color }}
+                        />
+                      ))}
                     </div>
                     <div className="flex items-center justify-between gap-2">
                       <p className="font-semibold">43%</p>
@@ -114,14 +110,14 @@ function Automation() {
                   </p>
                 </div>
                 <div className="flex items-center pl-2">
-                  {imageData.map((item)=>{
-                    return(
+                  {imageData.map((item) => {
+                    return (
                       <img
-                    src={item}
-                    alt="profile"
-                    className="w-13 rounded-full border-2 ml-[-15px]"
-                  />
-                    )
+                        src={item}
+                        alt="profile"
+                        className="w-13 rounded-full border-2 ml-[-15px]"
+                      />
+                    );
                   })}
                 </div>
               </div>
@@ -137,8 +133,14 @@ function Automation() {
                   </div>
                 </div>
                 <div className="flex items-end gap-3 overflow-x-hidden max-w-full">
-                  {graphData.map((item)=>{
-                    return <BarGraph key={item.id} percentage={item.percentage} range={item.range}/>
+                  {graphData.map((item) => {
+                    return (
+                      <BarGraph
+                        key={item.id}
+                        percentage={item.percentage}
+                        range={item.range}
+                      />
+                    );
                   })}
                 </div>
               </div>
