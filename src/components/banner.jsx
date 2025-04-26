@@ -16,7 +16,7 @@ function BannerCard({ src, text }) {
 
 function Progress({ text, color, value }) {
   return (
-    <div className="w-[30%] max-lg:w-[20%] h-full flex flex-col gap-2 ">
+    <div className="w-[30%] max-lg:w-[20%] h-full flex flex-col gap-2">
       <CircularProgressbar
         value={value}
         text={text}
@@ -36,13 +36,14 @@ function ProgressContent({ color, title, percentage }) {
   return (
     <div className="flex gap-2 items-center w-full justify-between border-2 p-2 rounded-full border-[#f5f5f55d] bg-[#ffffff63]">
       <div className="flex gap-2 items-center">
-        <div className={`w-3 h-3 bg-[${color}] rounded-full`}></div>
+        <div className="w-3 h-3 rounded-full" style={{ backgroundColor: color }}></div>
         <p className="text-sm">{title}</p>
       </div>
       <span className="text-sm">{percentage}</span>
     </div>
   );
 }
+
 function Banner() {
   const width = "w-full";
   const cardsData = [
@@ -51,19 +52,21 @@ function Banner() {
     { src: accept, text: "Boost professional confidence daily" },
     { src: accept, text: "Advance career growth opportunities" },
   ];
+
   const progressData = [
-    { text: "58%", value: 58, color: `rgba(244,104,0, ${100 / 100})` },
-    { text: "25%", value: 25, color: `rgba(13, 176, 68, ${100 / 100})` },
-    { text: "12%", value: 12, color: `rgba(14, 61, 201 , ${100 / 100})` },
+    { text: "58%", value: 58, color: "#F46800" }, 
+    { text: "25%", value: 25, color: "#0DB044" }, 
+    { text: "12%", value: 12, color: "#0E3DC9" }, 
   ];
 
   const progressContentData = [
-    { color: "rgba(244,104,0)", title: "Current Users", percentage: "58%" },
+    { color: "#F46800", title: "Current Users", percentage: "58%" },
     { color: "#0DB044", title: "User Retention", percentage: "25%" },
     { color: "#0E3DC9", title: "Interaction Rate", percentage: "12%" },
   ];
 
-  const progressColor = ["rgba(244,104,0)", "#0DB044", "#0E3DC9", "whitesmoke"];
+  const progressColor = ["#F46800", "#0DB044", "#0E3DC9", "whitesmoke"];
+
   return (
     <div className="flex justify-center items-center mt-20 mb-5">
       <div className="w-[80%] max-lg:w-[95%] max-xl:w-[90%] h-full bg-[radial-gradient(ellipse_at_bottom,_#ffc590_0%,_#ffc590_15%,_#f0d4d9_40%,_#e0ecf9_60%,_#deeaf6_100%)] rounded-4xl flex px-6">
@@ -80,8 +83,8 @@ function Banner() {
               />
             </div>
             <div className="flex flex-col max-lg:items-center gap-2 py-5 w-full">
-              {cardsData.map((item) => {
-                return <BannerCard src={item.src} text={item.text} />;
+              {cardsData.map((item, index) => {
+                return <BannerCard key={index} src={item.src} text={item.text} />;
               })}
             </div>
           </div>
@@ -104,9 +107,10 @@ function Banner() {
               </div>
 
               <div className="flex justify-between items-center gap-2 w-full mt-2">
-                {progressData.map((item) => {
+                {progressData.map((item, index) => {
                   return (
                     <Progress
+                      key={index}
                       text={item.text}
                       color={item.color}
                       value={item.value}
@@ -116,9 +120,10 @@ function Banner() {
               </div>
 
               <div className="flex flex-col items-center gap-3 w-full">
-                {progressContentData.map((item) => {
+                {progressContentData.map((item, index) => {
                   return (
                     <ProgressContent
+                      key={index}
                       color={item.color}
                       title={item.title}
                       percentage={item.percentage}
@@ -129,10 +134,12 @@ function Banner() {
             </div>
 
             <div className="flex items-center self-end max-lg:self-center bg-[#f6f2f2bc] rounded-full w-fit p-2 pl-[28px]">
-              {progressColor.map((item) => {
+              {progressColor.map((item, index) => {
                 return (
                   <div
-                    className={`w-15 h-15 max-md:w-12 max-md:h-12 bg-[${item}] rounded-full ml-[-20px]`}
+                    key={index}
+                    className="w-15 h-15 max-md:w-12 max-md:h-12 rounded-full ml-[-20px]"
+                    style={{ backgroundColor: item }}
                   ></div>
                 );
               })}
