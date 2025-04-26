@@ -6,7 +6,7 @@ import upRight from "../assets/upRight.png";
 function ProfileGraph({ width, color, spanText }) {
   return (
     <div className={`flex flex-col w-[${width}] gap-1`}>
-      <div className={`h-3.5 rounded-full bg-[${color}]`}></div>
+      <div className={`h-3.5 rounded-full`} style={{backgroundColor: color}}></div>
       <span className="text-[7px] pl-0.5 text-nowrap overflow-hidden overflow-ellipsis">
         {spanText}
       </span>
@@ -28,7 +28,7 @@ function Box2() {
     { width: "35%", color: "#06a33d", spanText: "Basic Information" },
     { width: "25%", color: "#1b76f3", spanText: "Content & Activity" },
     { width: "15%", color: "#f36700", spanText: "Social Links" },
-    { width: "25%", color: "#ffffff", spanText: "Verification" },
+    { width: "30%", color: "#ffffff", spanText: "Verification" },
   ];
 
   const secureButtons = [
