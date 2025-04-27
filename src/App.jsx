@@ -5,7 +5,7 @@ import Hero from "./components/hero";
 import AIPowered from "./components/aiPowdered";
 import Work from "./components/work";
 import Footer from "./components/footer";
-import Automation from "./components/automation";
+
 import Banner from "./components/banner";
 
 function App() {
@@ -16,7 +16,6 @@ function App() {
       <Hero />
       <AIPowered />
       <Work />
-      <Automation />
       <Banner/>
       <Footer/>
     </div>
