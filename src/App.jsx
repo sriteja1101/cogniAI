@@ -4,7 +4,7 @@ import Statement from "./components/statement";
 import Hero from "./components/hero";
 import AIPowered from "./components/aiPowdered";
 import Work from "./components/work";
-import Features from "./components/features";
+import Footer from "./components/footer";
 import Automation from "./components/automation";
 import Banner from "./components/banner";
 
@@ -16,9 +16,9 @@ function App() {
       <Hero />
       <AIPowered />
       <Work />
-      <Features />
       <Automation />
       <Banner/>
+      <Footer/>
     </div>
   );
 }
